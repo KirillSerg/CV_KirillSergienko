@@ -11,42 +11,56 @@ body{
     font-family: 'Raleway', sans-serif;
     background-color: #ffffff;
     color: rgb(52, 52, 52);
+    padding: 20px;
+    display: flex;
+    font-size: 16px;
+    /* justify-content: center; */
 }
 
 .main {
-    width: 1200px;
-    margin: 20px auto;
+    width: 210mm;
+    /* margin: 20px auto; */
     background-color: rgb(245, 238, 238);
+    
 }
 
 .header {
     display: flex;
-    align-items: center;
-    height: 270px;
+    box-sizing: border-box;
+    /* align-items: center; */
 }
 
-/* .header__photo {
+/* 2й вариант внедрения фото (но не отображается на печать)*/
+/*.header__photo {
+    flex: 30%;
+    background-image: url(../img/I_am.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: -80px;
 } */
 
-.photo {
-    width: 30%;
+.photo{
+    max-width: calc(210mm * 0.3);
 }
 
 .header__title{
-    width: 70%;
+    flex: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
 }
 
 .header__title__main{
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 50px;
+    font-size: 30px;
     letter-spacing:2px;
 }
 
 .header__title__text{
     padding-top: 20px;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 400;
     letter-spacing:3px;
 }
@@ -55,7 +69,7 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 80px;
+
     background-color: rgb(112, 112, 112);
 }
 
@@ -65,9 +79,8 @@ body{
     text-decoration: none;
 }
 .social__text {
-   color: rgb(240, 238, 235);
-   margin-left: 10px;
-    font-size: 20px;
+    color: rgb(240, 238, 235);
+    margin-left: 10px;
     line-height: 50px;
     font-weight: 400;
 }
@@ -75,18 +88,22 @@ body{
 .content {
     display: flex;
     /* height: 1000px; */
+    /* flex-wrap: wrap-reverse;
+    justify-content: center; */
 }
 
 .sidebar {
-    width: 30%;
+    flex: 30%;
+    min-width: calc(210mm * 0.3);  /* чтобы не съезжал отнсительно фото. Можно ли так - и flex и width, да еще и у Flexbox?*/
     background: rgb(188, 218, 219);
-    padding-bottom: 40px;
+    padding: 0 0 0 5%;
+    box-sizing: border-box;
 }
 
 .sidebar_blocks {
     display: flex;
     flex-direction: column;
-    padding: 40px 0 0px 40px;
+    padding: 20px 0 0 0;
     gap: 20px;
 }
 
@@ -106,8 +123,9 @@ body{
 }
 
 .content__main {
-    width: 70%;
-    padding: 0 40px 40px 0;
+    flex: 70%;
+    padding: 0 5% 0 5%;
+   box-sizing: border-box;
 }
 
 ul {
