@@ -11,15 +11,12 @@ body{
     font-family: 'Raleway', sans-serif;
     background-color: #ffffff;
     color: rgb(52, 52, 52);
-    padding: 20px;
+    padding: 1% 1% 10% 1%;
     display: flex;
-    font-size: 16px;
-    /* justify-content: center; */
 }
 
 .main {
     width: 210mm;
-    /* margin: 20px auto; */
     background-color: rgb(245, 238, 238);
     
 }
@@ -54,13 +51,13 @@ body{
 .header__title__main{
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 2em;
     letter-spacing:2px;
 }
 
 .header__title__text{
     padding-top: 20px;
-    font-size: 18px;
+    font-size: 1em;
     font-weight: 400;
     letter-spacing:3px;
 }
@@ -81,20 +78,17 @@ body{
 .social__text {
     color: rgb(240, 238, 235);
     margin-left: 10px;
-    line-height: 50px;
     font-weight: 400;
 }
 
 .content {
     display: flex;
-    /* height: 1000px; */
-    /* flex-wrap: wrap-reverse;
-    justify-content: center; */
+    /* flex-wrap: wrap-reverse;*/
 }
 
 .sidebar {
     flex: 30%;
-    min-width: calc(210mm * 0.3);  /* чтобы не съезжал отнсительно фото. Можно ли так - и flex и width, да еще и у Flexbox?*/
+    min-width: calc(210mm * 0.3);  /* чтобы не съезжал отнсительно фото.*/
     background: rgb(188, 218, 219);
     padding: 0 0 0 5%;
     box-sizing: border-box;
@@ -109,7 +103,7 @@ body{
 
 .sidebar__headers {
     text-transform: uppercase;
-    font-size: 24px;
+    font-size: 1.2em;
     line-height: 40px;
     font-weight: 700;
     letter-spacing: 5px;
@@ -125,18 +119,26 @@ body{
 .content__main {
     flex: 70%;
     padding: 0 5% 0 5%;
-   box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 ul {
 list-style-type: disc;
 list-style-position: inside;
-line-height: 30px;
 margin-bottom: 20px;
 }
 
 .experience__header {
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 0.9em;
     font-weight: 700;
+}
+
+@media (max-width: 500px) {
+    .social__text {display: none;}
+}
+
+@media (max-width: 320px) {  
+    .photo {display: none;}
+    .content {flex-wrap: wrap-reverse;}
 }
