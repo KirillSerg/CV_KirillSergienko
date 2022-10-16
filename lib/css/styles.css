@@ -11,14 +11,14 @@ body{
     font-family: 'Raleway', sans-serif;
     background-color: #ffffff;
     color: rgb(52, 52, 52);
-    padding: 1% 1% 10% 1%;
+    padding: 1% 1% 1% 1%;
     display: flex;
+    justify-content: center;
 }
 
 .main {
     width: 210mm;
-    background-color: rgb(245, 238, 238);
-    
+    background-color: #FBFCED;
 }
 
 .header {
@@ -63,10 +63,10 @@ body{
 }
 
 .social {
+    padding: 5px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-
     background-color: rgb(112, 112, 112);
 }
 
@@ -79,6 +79,7 @@ body{
     color: rgb(240, 238, 235);
     margin-left: 10px;
     font-weight: 400;
+    font-size: 14px;
 }
 
 .content {
@@ -89,8 +90,8 @@ body{
 .sidebar {
     flex: 30%;
     min-width: calc(210mm * 0.3);  /* чтобы не съезжал отнсительно фото.*/
-    background: rgb(188, 218, 219);
-    padding: 0 0 0 5%;
+    background: lightgray;
+    padding: 0 0 15px 5%;
     box-sizing: border-box;
 }
 
@@ -98,15 +99,20 @@ body{
     display: flex;
     flex-direction: column;
     padding: 20px 0 0 0;
-    gap: 20px;
+    gap: 10px;
+}
+
+.text,
+.sidebar_blocks p {
+    font-size: 0.9rem;
 }
 
 .sidebar__headers {
     text-transform: uppercase;
-    font-size: 1.2em;
+    font-size: 1em;
     line-height: 40px;
     font-weight: 700;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
     border-bottom: 3px solid rgb(112, 112, 112);
 }
 
@@ -123,15 +129,37 @@ body{
 }
 
 ul {
-list-style-type: disc;
-list-style-position: inside;
-margin-bottom: 20px;
+    list-style-type:circle;
+    list-style-position: inside;
+    /* margin-bottom: 20px; */
+}
+
+.list div {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0.8rem;
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+.tehnology {
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 1rem;
+    opacity: .8;
+    font-size: .7rem;
+    font-weight: 700;
+    margin: 2px;
+    padding: 3px;
 }
 
 .experience__header {
     text-transform: uppercase;
     font-size: 0.9em;
     font-weight: 700;
+}
+.experience__date {
+    font-size: 0.8rem;
+    margin-top: 5px;
 }
 
 @media (max-width: 500px) {
