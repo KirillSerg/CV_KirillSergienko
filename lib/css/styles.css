@@ -24,7 +24,6 @@ body{
 .header {
     display: flex;
     box-sizing: border-box;
-    /* align-items: center; */
 }
 
 /* 2d varint implement photo (can't print)*/
@@ -63,34 +62,10 @@ body{
 }
 .header__summary{
     padding: 20px 40px 0;
-    /* font-size: 0.9rem;
-    font-weight: 400;
-    letter-spacing:3px; */
 }
-
-/* .social {
-    padding: 5px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: rgb(112, 112, 112);
-}
-
-.social__icon {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-}
-.social__text {
-    color: rgb(240, 238, 235);
-    margin-left: 10px;
-    font-weight: 400;
-    font-size: 14px;
-} */
 
 .content {
     display: flex;
-    /* flex-wrap: wrap-reverse;*/
 }
 
 .sidebar {
@@ -144,7 +119,6 @@ body{
 ul {
     list-style-type:circle;
     list-style-position: inside;
-    /* margin-bottom: 20px; */
 }
 
 .list p {
@@ -179,10 +153,6 @@ ul {
     font-size: 0.8rem;
     margin-top: 5px;
 }
-
-/* @media (max-width: 420px) {
-    .social__text {display: none;}
-} */
 
 @media (max-width: 420px) {  
     .header__photo {display: none;}
