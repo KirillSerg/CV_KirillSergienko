@@ -16,7 +16,7 @@ body{
     justify-content: center;
 }
 
-.main {
+.conteiner {
     width: 210mm;
     background-color: #FBFCED;
 }
@@ -27,7 +27,7 @@ body{
     /* align-items: center; */
 }
 
-/* 2й вариант внедрения фото (но не отображается на печать)*/
+/* 2d varint implement photo (can't print)*/
 /*.header__photo {
     flex: 30%;
     background-image: url(../img/I_am.jpg);
@@ -36,7 +36,7 @@ body{
     background-position-x: -80px;
 } */
 
-.photo{
+.header__photo{
     max-width: calc(210mm * 0.3);
 }
 
@@ -48,21 +48,27 @@ body{
     text-align: center;
 }
 
-.header__title__main{
+.header__persone{
     text-transform: uppercase;
     font-weight: 700;
     font-size: 2em;
     letter-spacing:2px;
 }
 
-.header__title__text{
+.header__position{
     padding-top: 20px;
     font-size: 1em;
     font-weight: 400;
     letter-spacing:3px;
 }
+.header__summary{
+    padding: 20px 40px 0;
+    /* font-size: 0.9rem;
+    font-weight: 400;
+    letter-spacing:3px; */
+}
 
-.social {
+/* .social {
     padding: 5px;
     display: flex;
     justify-content: space-around;
@@ -80,7 +86,7 @@ body{
     margin-left: 10px;
     font-weight: 400;
     font-size: 14px;
-}
+} */
 
 .content {
     display: flex;
@@ -89,7 +95,7 @@ body{
 
 .sidebar {
     flex: 30%;
-    min-width: calc(210mm * 0.3);  /* чтобы не съезжал отнсительно фото.*/
+    min-width: calc(210mm * 0.3);  /* to fit photo.*/
     background: lightgray;
     padding: 0 0 15px 5%;
     box-sizing: border-box;
@@ -99,7 +105,7 @@ body{
     display: flex;
     flex-direction: column;
     padding: 20px 0 0 0;
-    gap: 15px;
+    gap: 10px;
 }
 
 .text,
@@ -122,9 +128,16 @@ body{
     gap: 6px;
 }
 
+.skills_enum {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0.8rem;
+    margin-top: 10px;
+}
+
 .content__main {
     flex: 70%;
-    padding: 0 5% 0 5%;
+    padding: 0 5% 15px 5%;
     box-sizing: border-box;
 }
 
@@ -132,6 +145,11 @@ ul {
     list-style-type:circle;
     list-style-position: inside;
     /* margin-bottom: 20px; */
+}
+
+.list p {
+    margin: 10px 0 20px 0;
+    font-size: .8rem;
 }
 
 .list div {
@@ -162,11 +180,11 @@ ul {
     margin-top: 5px;
 }
 
-@media (max-width: 500px) {
+/* @media (max-width: 420px) {
     .social__text {display: none;}
-}
+} */
 
-@media (max-width: 320px) {  
-    .photo {display: none;}
+@media (max-width: 420px) {  
+    .header__photo {display: none;}
     .content {flex-wrap: wrap-reverse;}
 }
