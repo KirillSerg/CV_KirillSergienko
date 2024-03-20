@@ -234,7 +234,7 @@ p {
   }
 }
 
-@media (max-width: 5500px) {
+@media (max-width: 550px) {
   .content {
     flex-direction: column;
   }
