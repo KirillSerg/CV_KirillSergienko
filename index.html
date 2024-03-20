@@ -1,186 +1,405 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="./lib/img/favicon.svg" />
+    <link rel="stylesheet" href="./lib/css/reset.css" />
+    <link rel="stylesheet" href="./lib/css/styles.css" />
+    <title>CV_KyryloSerhiienko</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./lib/css/reset.css">
-    <link rel="stylesheet" href="./lib/css/styles.css">
-    <title>CV_KirillSergienko</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;900&display=swap" rel="stylesheet">
-</head>
-
-<body>
+  <body>
     <div class="conteiner">
-        <header class="header">
-            <img class="header__photo" src="./lib/img/I_am.jpg" alt="My photo">
-            <div class="header__title">
-                <h1 class="header__persone">Kirill Sergienko</h1>
-                <p class="header__position">Frontend Developer</p>
-                <p class="header__summary text">I have a passion for development, an ambition to grow and develop myself, a desire to learn and use knowledge for good.</p>
+      <header class="header">
+        <img class="header__photo" src="./lib/img/I_am.jpg" alt="My photo" />
+        <div class="header__title">
+          <h1 class="header__persone">Kyrylo Serhiienko</h1>
+          <p class="header__position">Frontend Developer (React)</p>
+          <p class="header__summary text">
+            I have a passion for development, an ambition to grow and develop
+            myself, a desire to learn and use knowledge for good.
+          </p>
+        </div>
+      </header>
+
+      <main class="content">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+          <div class="skills sidebar_blocks">
+            <h3 class="sidebar__headers">Hard Skills</h3>
+            <div class="skills_enum">
+              <div class="skills_enum_group">
+                <span class="tehnology">React</span>
+                <span class="tehnology">Typescript</span>
+                <span class="tehnology">Next.js</span>
+                <span class="tehnology">JavaScript</span>
+                <span class="tehnology">HTML</span>
+              </div>
+              <div class="skills_enum_group">
+                <span class="tehnology">Redux</span>
+                <span class="tehnology">Jotai</span>
+                <span class="tehnology">Storybook</span>
+              </div>
+              <div class="skills_enum_group">
+                <span class="tehnology">REST API</span>
+                <span class="tehnology">Axios</span>
+                <span class="tehnology">React-router-dom</span>
+              </div>
+              <div class="skills_enum_group">
+                <span class="tehnology">Tailwind</span>
+                <span class="tehnology">Styled-components</span>
+                <span class="tehnology">SCSS</span>
+                <span class="tehnology">Bootstrap</span>
+                <span class="tehnology">MaterialUI</span>
+                <span class="tehnology">CSS</span>
+              </div>
+              <div class="skills_enum_group">
+                <span class="tehnology">React-hook-forms</span>
+                <span class="tehnology">Yup</span>
+                <span class="tehnology">Formik</span>
+              </div>
+              <div class="skills_enum_group">
+                <span class="tehnology">Git</span>
+                <span class="tehnology">GitFlow</span>
+                <span class="tehnology">Trello</span>
+              </div>
             </div>
-        </header>
-        
-        <section class="content">
+          </div>
 
-            <!-- Sidebar -->
-            <aside class="sidebar">
-                <div class="skills sidebar_blocks">
-                    <h3 class="sidebar__headers">Hard Skills</h3>
-                    <div class="skills_enum">
-                        <span class="tehnology">React</span>
-                        <span class="tehnology">Typescript</span>
-                        <span class="tehnology">Redux</span>
-                        <span class="tehnology">JavaScript</span>
-                        <span class="tehnology">HTML</span>
-                        <span class="tehnology">REST API</span>
-                        <span class="tehnology">React-router-dom</span>
-                        <span class="tehnology">React-hooks</span>
-                        <span class="tehnology">Styled-components</span>
-                        <span class="tehnology">React-Bootstrap</span>
-                        <span class="tehnology">MaterialUI</span>
-                        <span class="tehnology">CSS</span>
-                    </div>
-                </div>
-
-                <div class="skills sidebar_blocks">
-                    <h3 class="sidebar__headers">Soft Skills</h3>
-                    <div class="skills_enum">
-                        <span class="tehnology">Teamwork</span>
-                        <span class="tehnology">Scrum</span>
-                        <span class="tehnology">Git</span>
-                        <span class="tehnology">GitFlow</span>
-                        <span class="tehnology">Self-organization</span>
-                        <span class="tehnology">Responsibility</span>
-                    </div>
-                </div>
-
-                <div class="skills sidebar_blocks">
-                    <h3 class="sidebar__headers">Languages</h3>
-                    <p>English - pre intermediate</p>
-                    <p>Ukrainian - native</p>
-                    <p>Russian - proficiency</p>
-                </div>
-
-                <div class="education sidebar_blocks">
-                    <h3 class="sidebar__headers">Education</h3>
-                    <p><b>Engineer of computerized systems and automation</b></p>
-                    <p>Specialist</p>
-                    <p>Kryvyi Rih Technical University</p>
-                    <p>2007-2012</p>
-                </div>
-
-                <div class="contact sidebar_blocks">
-                    <h3 class="sidebar__headers sidebar_items">Contacts</h3>
-                    <a class="sidebar_items text" href="tel:+380967831300" target="_blank">
-                        <img src="./lib/img/phone.png" height="20" target="blanc" alt="phon icon">+38(096)783-13-00
-                    </a>
-                    <a class="sidebar_items text" href="mailto:kirill.sergienko1989@gmail.com">
-                        <img src="./lib/img/mail.png" height="20" target="blanc" alt="mail icon">
-                    kirill.sergienko1989<br>@gmail.com
-                    </a>
-                    <a class="sidebar_items text" href="https://www.google.com/maps/place/%D0%9A%D1%80%D0%B8%D0%B2%D0%BE%D0%B9+%D0%A0%D0%BE%D0%B3,+%D0%94%D0%BD%D0%B5%D0%BF%D1%80%D0%BE%D0%BF%D0%B5%D1%82%D1%80%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%B0,+50000/@47.9070207,33.0863363,10z/data=!3m1!4b1!4m5!3m4!1s0x40dadfe03154ab7b:0xb0fa3a177d6b186e!8m2!3d47.910483!4d33.391783">
-                        <img src="./lib/img/geoposition.png" height="20" target="blanc" alt="map icon">
-                    Ukrain, Kryvyi Rih (remote)
-                    </a>
-                    <a class="sidebar_items text" target="_blank" href="https://www.linkedin.com/in/kirill-sergienko-986993253/">
-                        <img src="./lib/img/linkedin.png" height="20" alt="Logo linkedIn">
-                    linkedin.com/in/kirill-sergienko-986993253/
-                    </a>
-                    <a class="sidebar_items text" target="_blank" href="https://github.com/KirillSerg">
-                        <img src="./lib/img/github.png" height="20" alt="Logo github">
-                    github.com/KirillSerg
-                    </a>
-                </div>
-            </aside>
-            
-            <!-- Main info -->
-            <!-- Experience -->
-            <div class="content__main">
-                <div class="experience sidebar_blocks">
-                    <h3 class="sidebar__headers">experience</h3>
-                    <div>
-                        <div style="font-weight: 700">Studying/projects</div>
-                        <div class="experience__date">Ukrain, remote / Jan 2022 - Present</div>
-                    </div>
-                    <ul class="list">
-                        <li>
-                            <a style="text-decoration: underline" target="_blank" href="https://kirillserg.github.io/news/">News page</a>
-                            <div>
-                                <span class="tehnology">React</span>
-                                <span class="tehnology">Typescript</span>
-                                <span class="tehnology">Redux(Toolkit)</span>
-                                <span class="tehnology">JavaScript</span>
-                                <span class="tehnology">React-router-dom</span>
-                                <span class="tehnology">REST API</span>
-                                <span class="tehnology">SASS</span>
-                                <span class="tehnology">MaterialUI</span>
-                                <p>A news site that makes a GET request and displays the latest news. You can filter news by keywords with their selection. You can also click and go to the selected news on a separate page.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <a style="text-decoration: underline" target="_blank" href="https://kirillserg.github.io/onepage/">One page</a>
-                            <div>
-                                <span class="tehnology">React</span>
-                                <span class="tehnology">Typescript</span>
-                                <span class="tehnology">JavaScript</span>
-                                <span class="tehnology">React-hook-forms</span>
-                                <span class="tehnology">Yup</span>
-                                <span class="tehnology">REST API</span>
-                                <span class="tehnology">Styled-components</span>
-                                <p>One page on work with REST (get, post requests), forms and validation.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <a style="text-decoration: underline" target="_blank" href="https://kirillserg.github.io/storage-calc/">Storage calculator</a>
-                            <div>
-                                <span class="tehnology">React</span>
-                                <span class="tehnology">Typescript</span>
-                                <span class="tehnology">JavaScript</span>
-                                <span class="tehnology">Recharts</span>
-                                <span class="tehnology">Styled-components</span>
-                                <p>Exemple of providers storage/transfer calculator on chart.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <a style="text-decoration: underline" target="_blank" href="https://kirillserg.github.io/attech-4_React-ToDoList/">ToDo-list</a>
-                            <div>
-                                <span class="tehnology">React</span>
-                                <span class="tehnology">Typescript</span>
-                                <span class="tehnology">Redux</span>
-                                <span class="tehnology">JavaScript</span>
-                                <span class="tehnology">REST API</span>
-                                <span class="tehnology">Styled-components</span>
-                                <span class="tehnology">SASS/SCSS</span>
-                                <p>ToDo list with the ability to add, delete and change tasks. The first tasks are taken from the POST request. All data is stored in local storage and store manager Redux. This project uses both a styled component and SASS for the practice, but styles are minimal.</p>
-                            </div>
-                        </li>
-                    </ul>
-
-                    <div>
-                        <div style="font-weight: 700;">Metinvest Holding</div>
-                        <div class="experience__date">Ukrain, Kryvyi Rih / Sep 2013 - Present</div>
-                    </div>
-                    <ul class="list">
-                        <li>Management and analysis of investment projects</li>
-                    </ul>
-                </div>
-
-                <!-- profile -->
-                <div class="profile sidebar_blocks">
-                    <h3 class="sidebar__headers">profile</h3>
-                    <p>I have study expirience closel to real conditions of remote work and education.
-                        Get basic knowlege of HTML&CSS, JavaScript, React, Redux, TypeScript, styled-components, Git.
-                        <br><br>I have experience of working in a team, including working with branches, commits, mergeconflicts on Git according to the Gitflow scheme. It gave me the skill of self-organization. In my work I trying to use KISS & DRY principles.
-                        <br><br>I'm always open to something new, whether it's dating, ideas, knowledge or experiences.
-                    </p>
-                </div>
+          <!-- <div class="skills sidebar_blocks">
+            <h3 class="sidebar__headers">Soft Skills</h3>
+            <div class="skills_enum">
+              <span class="tehnology">Teamwork</span>
+              <span class="tehnology">Scrum</span>
+              <span class="tehnology">Git</span>
+              <span class="tehnology">GitFlow</span>
+              <span class="tehnology">Self-organization</span>
+              <span class="tehnology">Responsibility</span>
             </div>
+          </div> -->
+
+          <div class="skills sidebar_blocks">
+            <h3 class="sidebar__headers">Languages</h3>
+            <p class="text">English - pre-intermediate</p>
+            <p class="text">Ukrainian - native</p>
+            <p class="text">Russian - proficiency</p>
+          </div>
+
+          <div class="education sidebar_blocks">
+            <h3 class="sidebar__headers">Education</h3>
+            <p class="text">
+              <b>Engineer of computerized systems and automation</b>
+            </p>
+            <p class="text">Specialist</p>
+            <p class="text">Kryvyi Rih Technical University</p>
+            <p class="text">2007-2012</p>
+          </div>
+
+          <div class="contact sidebar_blocks">
+            <h3 class="sidebar__headers">Contacts</h3>
+            <a
+              class="sidebar_items text"
+              href="tel:+380967831300"
+              target="_blank"
+            >
+              <img
+                src="./lib/img/phone.png"
+                height="20"
+                alt="phon icon"
+              />+38(096)783-13-00
+            </a>
+            <a
+              class="sidebar_items text"
+              href="mailto:kirill.sergienko1989@gmail.com"
+              target="_blank"
+            >
+              <img src="./lib/img/mail.png" height="20" alt="mail icon" />
+              kirill.sergienko1989<br />@gmail.com
+            </a>
+            <a
+              class="sidebar_items text"
+              href="https://www.google.com/maps/place/%D0%9A%D1%80%D0%B8%D0%B2%D0%BE%D0%B9+%D0%A0%D0%BE%D0%B3,+%D0%94%D0%BD%D0%B5%D0%BF%D1%80%D0%BE%D0%BF%D0%B5%D1%82%D1%80%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%B0,+50000/@47.9070207,33.0863363,10z/data=!3m1!4b1!4m5!3m4!1s0x40dadfe03154ab7b:0xb0fa3a177d6b186e!8m2!3d47.910483!4d33.391783"
+              target="_blank"
+            >
+              <img src="./lib/img/geoposition.png" height="20" alt="map icon" />
+              Ukraine Kryvyi Rih (remote)
+            </a>
+            <a
+              class="sidebar_items text"
+              target="_blank"
+              href="https://www.linkedin.com/in/kyrylo-serhiienko-986993253/"
+            >
+              <img
+                src="./lib/img/linkedin.png"
+                height="20"
+                alt="Logo linkedIn"
+              />
+              linkedin.com/in/kirill-sergienko-986993253/
+            </a>
+            <a
+              class="sidebar_items text"
+              target="_blank"
+              href="https://github.com/KirillSerg"
+            >
+              <img src="./lib/img/github.png" height="20" alt="Logo github" />
+              github.com/KirillSerg
+            </a>
+          </div>
+        </aside>
+
+        <!-- Main info -->
+        <!-- Experience -->
+        <section class="content__main">
+          <div class="experience sidebar_blocks">
+            <h3 class="sidebar__headers">experience</h3>
+            <div class="experience__company-box">
+              <a
+                class="experience__company"
+                href="https://www.linkedin.com/company/digitalmindsua/mycompany/"
+                target="_blank"
+              >
+                DigitalMindsUa
+                <img
+                  src="./lib/img/linkIcon.svg"
+                  alt="link"
+                  width="10"
+                  height="10"
+                />
+              </a>
+              <p class="experience__date">
+                Ukraine, remote / May 2023 - Present
+              </p>
+            </div>
+            <div class="experience__group">
+              <div>
+                <p><b>Responsibility: </b></p>
+                <ul class="list">
+                  <li>
+                    taking part in discussions on building the business logic of
+                    the project
+                  </li>
+                  <li>
+                    construction of the client part of the project: structure,
+                    components, their interaction, connecting with server,
+                    stylization and adaptation
+                  </li>
+                  <li>
+                    cooperation with team members of other specializations
+                    (backend, designers, QA)
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <p><b>Projects: </b></p>
+                <a
+                  class="project_block__name"
+                  href="https://platform-for-juniors.onrender.com/"
+                  target="_blank"
+                >
+                  Codewius
+                  <img
+                    src="./lib/img/linkIcon.svg"
+                    alt="link"
+                    width="10"
+                    height="10"
+                  />
+                </a>
+                <!-- <span class="code_link">code</span> -->
+                <div class="project_technologies">
+                  <span class="tehnology">React</span>
+                  <span class="tehnology">Typescript</span>
+                  <span class="tehnology">JavaScript</span>
+                  <span class="tehnology">Redux</span>
+                  <span class="tehnology">Axios</span>
+                  <span class="tehnology">React-router-dom</span>
+                  <span class="tehnology">SCSS</span>
+                </div>
+                <p class="project_description">
+                  Platform for junior, that help to get team work experience.
+                  This platform helps to monitor and manage the development of a
+                  joint project with the help of task boards, chat,
+                  notifications, dashboard.
+                </p>
+              </div>
+            </div>
+
+            <div class="experience__company-box">
+              <a class="experience__company" href="#" target="_blank">
+                Pet-projects
+              </a>
+              <p class="experience__date">
+                Ukraine, remote / Jan 2022 - Present
+              </p>
+            </div>
+            <div class="experience__group">
+              <div>
+                <p><b>Projects: </b></p>
+                <a
+                  class="project_block__name"
+                  href="https://trip-weather-git-main-kirillserg.vercel.app/"
+                  target="_blank"
+                >
+                  Trip-weather
+                  <img
+                    src="./lib/img/linkIcon.svg"
+                    alt="link"
+                    width="10"
+                    height="10"
+                  />
+                </a>
+                <span class="code_link">
+                  <a
+                    target="_blank"
+                    href="https://github.com/KirillSerg/trip-weather"
+                    >code</a
+                  ></span
+                >
+                <div class="project_technologies">
+                  <span class="tehnology">React</span>
+                  <span class="tehnology">Typescript</span>
+                  <span class="tehnology">JavaScript</span>
+                  <span class="tehnology">Jotai</span>
+                  <span class="tehnology">REST API</span>
+                  <span class="tehnology">CSS</span>
+                </div>
+                <p class="project_description">
+                  With Trip-Weather app users can see the weather forecast for
+                  their upcoming journeys. Users can choose trip period and
+                  location. All trips have a countdown timer.
+                </p>
+              </div>
+
+              <!-- spitx -->
+              <div>
+                <a
+                  class="project_block__name"
+                  href="https://spitx.vercel.app/"
+                  target="_blank"
+                >
+                  Restoran landing
+                  <img
+                    src="./lib/img/linkIcon.svg"
+                    alt="link"
+                    width="10"
+                    height="10"
+                  />
+                </a>
+                <span class="code_link">
+                  <a target="_blank" href="https://github.com/KirillSerg/spitx"
+                    >code</a
+                  ></span
+                >
+                <div class="project_technologies">
+                  <span class="tehnology">Next.js</span>
+                  <span class="tehnology">Storybook</span>
+                  <span class="tehnology">JavaScript</span>
+                  <span class="tehnology">Tailwind</span>
+                </div>
+                <p class="project_description">
+                  A simple landing page for a restaurant with simple
+                  interactivity.
+                </p>
+              </div>
+
+              <div>
+                <a
+                  class="project_block__name"
+                  href="https://kirillserg.github.io/news/"
+                  target="_blank"
+                >
+                  News page
+                  <img
+                    src="./lib/img/linkIcon.svg"
+                    alt="link"
+                    width="10"
+                    height="10"
+                  />
+                </a>
+                <span class="code_link">
+                  <a target="_blank" href="https://kirillserg.github.io/news/"
+                    >code</a
+                  ></span
+                >
+                <div class="project_technologies">
+                  <span class="tehnology">React</span>
+                  <span class="tehnology">Typescript</span>
+                  <span class="tehnology">JavaScript</span>
+                  <span class="tehnology">Redux(Toolkit)</span>
+                  <span class="tehnology">React-router-dom</span>
+                  <span class="tehnology">REST API</span>
+                  <span class="tehnology">SASS</span>
+                  <span class="tehnology">MaterialUI</span>
+                </div>
+                <p class="project_description">
+                  A news site that makes a GET request and displays the latest
+                  news. You can filter news by keywords with their selection.
+                  You can also click and go to the selected news on a separate
+                  page
+                </p>
+              </div>
+
+              <div>
+                <a
+                  class="project_block__name"
+                  href="https://kirillserg.github.io/onepage/"
+                  target="_blank"
+                >
+                  SPA
+                  <img
+                    src="./lib/img/linkIcon.svg"
+                    alt="link"
+                    width="10"
+                    height="10"
+                  />
+                </a>
+                <span class="code_link">
+                  <a
+                    target="_blank"
+                    href="https://github.com/KirillSerg/onepage"
+                    >code</a
+                  ></span
+                >
+                <div class="project_technologies">
+                  <span class="tehnology">React</span>
+                  <span class="tehnology">Typescript</span>
+                  <span class="tehnology">JavaScript</span>
+                  <span class="tehnology">React-hook-forms</span>
+                  <span class="tehnology">Yup</span>
+                  <span class="tehnology">REST API</span>
+                  <span class="tehnology">Styled-components</span>
+                </div>
+                <p class="project_description">
+                  One page that show work with REST (get, post requests), forms
+                  and validation.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- about -->
+          <div class="about sidebar_blocks">
+            <h3 class="sidebar__headers">about me</h3>
+            <p>
+              I have 1.5 years of non-commercial working experience close to
+              real conditions of remote work and education.
+              <br /><br />I have experience of working in a team, including
+              meetings (Scrum), working with branches, commits, merge conflicts
+              on Git according to the Gitflow scheme. It's improved my skills of
+              self-organization. In my work I trying to use KISS & DRY
+              principles. <br /><br />I'm always open to something new, whether
+              it's dating, ideas, knowledge or experiences.
+            </p>
+          </div>
         </section>
+      </main>
     </div>
-
-</body>
+  </body>
 </html>
